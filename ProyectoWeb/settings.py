@@ -48,7 +48,9 @@ INSTALLED_APPS = [
     'autenticacion',
     'crispy_forms',
     'pedidos',
-    'afterselling'
+    'afterselling',
+    'pages.apps.PagesConfig',
+    'ckeditor',
     ]
 
 MIDDLEWARE = [
@@ -142,7 +144,7 @@ EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_USE_TLS=True
 EMAIL_PORT=587
-EMAIL_HOST_USER="aquí la dirección del destinatario"
+EMAIL_HOST_USER="tutligth777@gmail.com"
 EMAIL_HOST_PASSWORD="abckzymcjtsyoewx"
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
@@ -159,6 +161,7 @@ MESSAGE_TAGS={
 
 }
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
