@@ -48,7 +48,9 @@ INSTALLED_APPS = [
     'autenticacion',
     'crispy_forms',
     'pedidos',
-    'afterselling'
+    'afterselling',
+    'pages.apps.PagesConfig',
+    'ckeditor',
     ]
 
 MIDDLEWARE = [
@@ -143,7 +145,7 @@ EMAIL_HOST="smtp.gmail.com"
 EMAIL_USE_TLS=True
 EMAIL_PORT=587
 EMAIL_HOST_USER="aquí la dirección del destinatario"
-EMAIL_HOST_PASSWORD="abckzymcjtsyoewx"
+EMAIL_HOST_PASSWORD="tuclave"
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
 
@@ -158,6 +160,11 @@ MESSAGE_TAGS={
 
 
 }
+# Default primary key field type
+# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
 

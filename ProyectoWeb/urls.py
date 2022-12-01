@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django import urls
 from django.contrib import admin
+from pages.urls import pages_patterns
 from django.urls import path, include
+from django.conf import settings
+
 
 
 
@@ -39,5 +42,7 @@ urlpatterns = [
     path('', include('ProyectoWebApp.urls')),
 
     path('afterselling/', include('afterselling.urls')),
+    
+    path('pages/', include(pages_patterns)),
     
 ]
